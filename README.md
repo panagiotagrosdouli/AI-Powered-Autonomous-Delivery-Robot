@@ -50,3 +50,17 @@ See [integration guide](docs/INTEGRATION.md) and [experiment plan](docs/EXPERIME
 4. Controlled studies of success rate, collision rate, clearance, latency, ADE and FDE.
 
 No experimental performance metrics are claimed yet.
+
+## Run live LiDAR SLAM in Gazebo
+
+This project includes executable wrappers around **Nav2's upstream TurtleBot3 Gazebo simulator and SLAM Toolbox**, so the robot can generate a map from live simulated LiDAR/odometry (rather than displaying a prerecorded map):
+
+    bash scripts/install_ros_stack.sh
+    bash scripts/run_slam.sh
+
+In another terminal:
+
+    source /opt/ros/jazzy/setup.bash
+    python3 scripts/check_slam.py
+
+Save a map and relaunch with AMCL using the commands in [SLAM runbook](docs/SLAM_RUNBOOK.md). These are documented procedures, **not claims of an executed simulator run in this repository**.
