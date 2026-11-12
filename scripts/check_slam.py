@@ -6,6 +6,7 @@ import time
 
 import rclpy
 from rclpy.node import Node
+from rclpy.qos import qos_profile_sensor_data, QoSProfile, DurabilityPolicy
 from nav_msgs.msg import OccupancyGrid, Odometry
 from sensor_msgs.msg import LaserScan
 from tf2_msgs.msg import TFMessage
@@ -16,9 +17,9 @@ class SlamProbe(Node):
         super().__init__('slam_probe')
         self.seen = {'scan': False, 'odom': False, 'map': False, 'map_to_odom': False}
         self.map_cells = 0
-        self.create_subscription(LaserScan, '/scan', self.scan, 10)
-        self.create_subscription(Odometry, '/odom', self.odom, 10)
-        self.create_subscription(OccupancyGrid, '/map', self.map, 10)
+        self.create_subscription(LaserScan, '/scan', self.scan, qos_profile_sensor_data)
+        self.create_subscription(Odometry, '/odom', self.odom, qos_profile_sensor_data)
+        self.create_subscription(OccupancyGrid, '/map', self.map, QoSProfile(depth=1, durability=DurabilityPolicy.TRANSIENT_LOCAL))
         self.create_subscription(TFMessage, '/tf', self.tf, 30)
 
     def scan(self, msg):
