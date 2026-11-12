@@ -6,6 +6,7 @@ from pathlib import Path
 from trajectory_forecasting.data import load_windows, read_tracks
 from trajectory_forecasting.metrics import (constant_velocity, displacement_errors,
                                             evaluate_constant_velocity)
+from trajectory_forecasting.train import _scene_sets
 
 
 class TrajectoryPipelineTests(unittest.TestCase):
@@ -48,6 +49,10 @@ class TrajectoryPipelineTests(unittest.TestCase):
         result = evaluate_constant_velocity(load_windows(self.path, {"scene-A"}, 8, 12, 20))
         self.assertEqual(result["windows"], 1)
         self.assertGreaterEqual(result["ADE_m"], 0)
+
+    def test_scene_split_overlap_rejected(self):
+        with self.assertRaisesRegex(ValueError, "must be disjoint"):
+            _scene_sets(["scene-A"], ["scene-A"])
 
 
 if __name__ == "__main__":

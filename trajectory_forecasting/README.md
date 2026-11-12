@@ -26,6 +26,21 @@ The output is generated only from the provided input data. No scores or trained
 weights are included in this repository. Model classes require PyTorch, but the
 constant-velocity baseline and CSV validation use only the Python standard library.
 
+Train one learned model with whole scenes assigned to separate splits:
+
+```sh
+python -m pip install -r trajectory_forecasting/requirements-train.txt
+python -m trajectory_forecasting.train path/to/tracks.csv \
+  --train-scenes scene_a scene_b --val-scenes scene_c --model gru \
+  --sampling-period 0.40 --output-dir results/gru
+```
+
+The runner rejects overlapping train/validation scene IDs, saves the best
+validation-ADE checkpoint, and records validation ADE/FDE, checkpoint size and
+single-window inference latency in `metrics.json`, plus per-epoch metrics in
+`history.csv`. This is a training/evaluation implementation; the repository does
+not include benchmark data or measured learned-model results.
+
 ## Dataset provenance and restrictions
 
 No dataset is bundled or downloaded by this package. Before using ETH/UCY, SDD,
