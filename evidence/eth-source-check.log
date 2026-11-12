@@ -1,0 +1,13 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/1.1 200 OK
+date: Thu, 12 Nov 2026 20:09:43 GMT
+server: envoy
+
+HTTP/2 404 
+date: Thu, 12 Nov 2026 20:09:44 GMT
+server: envoy
+content-type: text/html; charset=iso-8859-1
+x-envoy-upstream-service-time: 560
+

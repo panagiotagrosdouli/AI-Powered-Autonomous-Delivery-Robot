@@ -1,0 +1,81 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  graphicsmagick-libmagick-dev-compat iso-codes libcap2-bin libcharls2
+  libdc1394-dev libdw1t64 libexif-dev libexif12 libgd3 libgdcm-dev
+  libgdcm3.0t64 libgeographiclib-dev libgeographiclib26 libgl2ps1.4
+  libgphoto2-6t64 libgphoto2-dev libgphoto2-port12t64 libgraphics-magick-perl
+  libgraphicsmagick++-q16-12t64 libgraphicsmagick++1-dev
+  libgraphicsmagick-q16-3t64 libgraphicsmagick1-dev
+  libgstreamer-plugins-base1.0-0 libgstreamer1.0-0 libhwy-dev libimath-dev
+  libjxl-dev liblcms2-dev liblept5 libopencv-calib3d-dev
+  libopencv-calib3d406t64 libopencv-contrib-dev libopencv-contrib406t64
+  libopencv-core-dev libopencv-core406t64 libopencv-dev libopencv-dnn-dev
+  libopencv-dnn406t64 libopencv-features2d-dev libopencv-features2d406t64
+  libopencv-flann-dev libopencv-flann406t64 libopencv-highgui-dev
+  libopencv-highgui406t64 libopencv-imgcodecs-dev libopencv-imgcodecs406t64
+  libopencv-imgproc-dev libopencv-imgproc406t64 libopencv-ml-dev
+  libopencv-ml406t64 libopencv-objdetect-dev libopencv-objdetect406t64
+  libopencv-photo-dev libopencv-photo406t64 libopencv-shape-dev
+  libopencv-shape406t64 libopencv-stitching-dev libopencv-stitching406t64
+  libopencv-superres-dev libopencv-superres406t64 libopencv-video-dev
+  libopencv-video406t64 libopencv-videoio-dev libopencv-videoio406t64
+  libopencv-videostab-dev libopencv-videostab406t64 libopencv-viz-dev
+  libopencv-viz406t64 libopenexr-dev liborc-0.4-0t64 libraw1394-dev
+  libsocket++1 libtcl8.6 libtesseract5 libtk8.6 libvtk9.1t64 libwmf-0.2-7
+  libwmf-dev libwmflite-0.2-7 libxft2 python3-opencv ros-jazzy-angles
+  ros-jazzy-behaviortree-cpp ros-jazzy-cv-bridge ros-jazzy-diagnostic-updater
+  ros-jazzy-dwb-msgs ros-jazzy-geographic-msgs ros-jazzy-nav-2d-msgs
+  ros-jazzy-nav-2d-utils ros-jazzy-nav2-behavior-tree ros-jazzy-nav2-common
+  ros-jazzy-nav2-core ros-jazzy-nav2-costmap-2d ros-jazzy-nav2-msgs
+  ros-jazzy-nav2-util ros-jazzy-nav2-voxel-grid ros-jazzy-robot-localization
+  ros-jazzy-tf2-eigen
+Suggested packages:
+  isoquery libgd-tools geographiclib-doc geographiclib-tools gphoto2
+  graphicsmagick-dbg graphicsmagick libvisual-0.4-plugins gstreamer1.0-tools
+  opencv-doc libraw1394-doc tcl8.6 tk8.6 vtk9-doc vtk9-examples
+  libwmf-0.2-7-gtk libwmf-doc
+Recommended packages:
+  libpam-cap libexif-doc libgphoto2-l10n ghostscript fonts-urw-base35
+  gstreamer1.0-plugins-base opencv-data libopencv-java libraw1394-tools
+The following NEW packages will be installed:
+  graphicsmagick-libmagick-dev-compat iso-codes libcap2-bin libcharls2
+  libdc1394-dev libdw1t64 libexif-dev libexif12 libgd3 libgdcm-dev
+  libgdcm3.0t64 libgeographiclib-dev libgeographiclib26 libgl2ps1.4
+  libgphoto2-6t64 libgphoto2-dev libgphoto2-port12t64 libgraphics-magick-perl
+  libgraphicsmagick++-q16-12t64 libgraphicsmagick++1-dev
+  libgraphicsmagick-q16-3t64 libgraphicsmagick1-dev
+  libgstreamer-plugins-base1.0-0 libgstreamer1.0-0 libhwy-dev libimath-dev
+  libjxl-dev liblcms2-dev liblept5 libopencv-calib3d-dev
+  libopencv-calib3d406t64 libopencv-contrib-dev libopencv-contrib406t64
+  libopencv-core-dev libopencv-core406t64 libopencv-dev libopencv-dnn-dev
+  libopencv-dnn406t64 libopencv-features2d-dev libopencv-features2d406t64
+  libopencv-flann-dev libopencv-flann406t64 libopencv-highgui-dev
+  libopencv-highgui406t64 libopencv-imgcodecs-dev libopencv-imgcodecs406t64
+  libopencv-imgproc-dev libopencv-imgproc406t64 libopencv-ml-dev
+  libopencv-ml406t64 libopencv-objdetect-dev libopencv-objdetect406t64
+  libopencv-photo-dev libopencv-photo406t64 libopencv-shape-dev
+  libopencv-shape406t64 libopencv-stitching-dev libopencv-stitching406t64
+  libopencv-superres-dev libopencv-superres406t64 libopencv-video-dev
+  libopencv-video406t64 libopencv-videoio-dev libopencv-videoio406t64
+  libopencv-videostab-dev libopencv-videostab406t64 libopencv-viz-dev
+  libopencv-viz406t64 libopenexr-dev liborc-0.4-0t64 libraw1394-dev
+  libsocket++1 libtcl8.6 libtesseract5 libtk8.6 libvtk9.1t64 libwmf-0.2-7
+  libwmf-dev libwmflite-0.2-7 libxft2 python3-opencv ros-jazzy-angles
+  ros-jazzy-behaviortree-cpp ros-jazzy-cv-bridge ros-jazzy-diagnostic-updater
+  ros-jazzy-dwb-core ros-jazzy-dwb-msgs ros-jazzy-geographic-msgs
+  ros-jazzy-nav-2d-msgs ros-jazzy-nav-2d-utils ros-jazzy-nav2-amcl
+  ros-jazzy-nav2-behavior-tree ros-jazzy-nav2-behaviors
+  ros-jazzy-nav2-bt-navigator ros-jazzy-nav2-common ros-jazzy-nav2-controller
+  ros-jazzy-nav2-core ros-jazzy-nav2-costmap-2d
+  ros-jazzy-nav2-lifecycle-manager ros-jazzy-nav2-map-server
+  ros-jazzy-nav2-msgs ros-jazzy-nav2-navfn-planner ros-jazzy-nav2-planner
+  ros-jazzy-nav2-util ros-jazzy-nav2-velocity-smoother
+  ros-jazzy-nav2-voxel-grid ros-jazzy-nav2-waypoint-follower
+  ros-jazzy-robot-localization ros-jazzy-tf2-eigen
+0 upgraded, 109 newly installed, 0 to remove and 5 not upgraded.
+Need to get 79.6 MB of archives.
+After this operation, 428 MB of additional disk space will be used.
+Do you want to continue? [Y/n] N
+Abort.

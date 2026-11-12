@@ -8,3 +8,5 @@ runs/
 *.bag
 *.db3
 *.mcap
+
+work/

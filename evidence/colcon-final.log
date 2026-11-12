@@ -1,0 +1,26 @@
+Starting >>> delivery_interfaces
+Finished <<< delivery_interfaces [0.82s]
+Starting >>> delivery_robot
+Finished <<< delivery_robot [1.24s]
+
+Summary: 2 packages finished [2.19s]
+Starting >>> delivery_interfaces
+Finished <<< delivery_interfaces [0.03s]
+Starting >>> delivery_robot
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.000s
+
+NO TESTS RAN
+--- stderr: delivery_robot
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.000s
+
+NO TESTS RAN
+---
+Failed   <<< delivery_robot [0.22s, exited with code 5]
+
+Summary: 1 package finished [0.42s]
+  1 package failed: delivery_robot
+  1 package had stderr output: delivery_robot

@@ -1,0 +1,15 @@
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-11-12-20-24-21-156550-09688001f610-10930
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [async_slam_toolbox_node-1]: process started with pid [10946]
+[async_slam_toolbox_node-1] [INFO] [1794515061.381810728] [slam_toolbox]: Node using stack size 40000000
+[async_slam_toolbox_node-1] [INFO] [1794515061.580049217] [slam_toolbox]: Configuring
+[async_slam_toolbox_node-1] [INFO] [1794515061.586505806] [slam_toolbox]: Using solver plugin solver_plugins::CeresSolver
+[INFO] [launch.user]: [LifecycleLaunch] Slamtoolbox node is activating.
+[async_slam_toolbox_node-1] [INFO] [1794515061.616302348] [slam_toolbox]: Activating
+[async_slam_toolbox_node-1] Registering sensor: [Custom Described Lidar]
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+[INFO] [async_slam_toolbox_node-1]: sending signal 'SIGINT' to process[async_slam_toolbox_node-1]
+[INFO] [async_slam_toolbox_node-1]: process has finished cleanly [pid 10946]
+[async_slam_toolbox_node-1] [INFO] [1794515150.966664626] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[async_slam_toolbox_node-1] Unregistering sensor: Custom Described Lidar

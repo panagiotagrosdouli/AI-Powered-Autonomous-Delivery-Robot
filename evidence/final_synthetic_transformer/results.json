@@ -1,0 +1,91 @@
+{
+  "data_kind": "SYNTHETIC SOFTWARE TEST ONLY",
+  "source": "research.synthetic_fixture; generated analytical motion, not recorded pedestrians",
+  "dataset_manifest": {
+    "units": "metres",
+    "license_verified": true,
+    "license": "Project-generated synthetic data; MIT",
+    "sample_interval_seconds": 0.4,
+    "frame_stride": 1,
+    "data_kind": "SYNTHETIC SOFTWARE TEST ONLY",
+    "source": "research.synthetic_fixture; generated analytical motion, not recorded pedestrians",
+    "train": [
+      {
+        "path": "train.txt",
+        "scene_id": "train",
+        "sha256": "0ca2ebe1b25f1a789f5f079a006b7a24a0d8f27fe30d999853a6f99cf00734dd"
+      }
+    ],
+    "val": [
+      {
+        "path": "val.txt",
+        "scene_id": "val",
+        "sha256": "a662fbed1e6f22f51cc9ed3b845b1ba8d855853dfbefa293d6cc89ab2202a5af"
+      }
+    ],
+    "test": [
+      {
+        "path": "test.txt",
+        "scene_id": "test",
+        "sha256": "c719453c881b68de1b99ed21981369a25d2abab5c29b1c802dd0fb05bdb9b3e0"
+      }
+    ]
+  },
+  "manifest_sha256": "ffd8218f9b2526a06cf124221278022a98afd6f93dc069999b58b24c7d3cfc9c",
+  "split_windows": {
+    "train": 66,
+    "val": 66,
+    "test": 66
+  },
+  "results": {
+    "transformer": {
+      "ade_m": 1.4873875379562378,
+      "fde_m": 2.5889854431152344,
+      "latency_ms_p50": 0.2813085000070714,
+      "latency_ms_p95": 0.4719435000026806
+    },
+    "cv": {
+      "ade_m": 0.09458573907613754,
+      "fde_m": 0.2432204782962799,
+      "latency_ms_p50": 0.022994500000095286,
+      "latency_ms_p95": 0.05092899999681322
+    }
+  },
+  "history": [
+    {
+      "epoch": 0,
+      "train_mse_m2": 4.746884001926943,
+      "val_mse_m2": 2.082612991333008
+    },
+    {
+      "epoch": 1,
+      "train_mse_m2": 3.461784825180516,
+      "val_mse_m2": 2.4007749557495117
+    },
+    {
+      "epoch": 2,
+      "train_mse_m2": 3.547416571414832,
+      "val_mse_m2": 1.325214147567749
+    },
+    {
+      "epoch": 3,
+      "train_mse_m2": 2.5988215244177617,
+      "val_mse_m2": 0.8307223320007324
+    },
+    {
+      "epoch": 4,
+      "train_mse_m2": 2.0302628459352436,
+      "val_mse_m2": 1.2619051933288574
+    }
+  ],
+  "training_seconds": 0.05136622299994542,
+  "torch": "2.5.1+cpu",
+  "python": "3.12.14",
+  "cpu": "",
+  "threads": 1,
+  "seed": 42,
+  "epochs": 5,
+  "obs": 8,
+  "pred": 12,
+  "checkpoint_sha256": "5886c61457bae146b458c5355b05a49b71a3b85be331da88b19b1e8d2997e0d7"
+}

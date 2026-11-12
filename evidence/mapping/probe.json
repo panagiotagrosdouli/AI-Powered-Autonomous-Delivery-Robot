@@ -1,0 +1,253 @@
+{
+  "kind": "SLAM Toolbox on live simulated LiDAR and wheel odometry; no input map",
+  "passed": true,
+  "map_updates": [
+    {
+      "width": 237,
+      "height": 157,
+      "known": 1517,
+      "stamp": [
+        4,
+        200000000
+      ]
+    },
+    {
+      "width": 237,
+      "height": 157,
+      "known": 1517,
+      "stamp": [
+        4,
+        700000000
+      ]
+    },
+    {
+      "width": 238,
+      "height": 158,
+      "known": 18413,
+      "stamp": [
+        5,
+        200000000
+      ]
+    },
+    {
+      "width": 238,
+      "height": 158,
+      "known": 23884,
+      "stamp": [
+        5,
+        600000000
+      ]
+    },
+    {
+      "width": 238,
+      "height": 158,
+      "known": 26120,
+      "stamp": [
+        6,
+        100000000
+      ]
+    },
+    {
+      "width": 238,
+      "height": 158,
+      "known": 27675,
+      "stamp": [
+        6,
+        600000000
+      ]
+    },
+    {
+      "width": 238,
+      "height": 158,
+      "known": 28077,
+      "stamp": [
+        7,
+        100000000
+      ]
+    },
+    {
+      "width": 238,
+      "height": 158,
+      "known": 28354,
+      "stamp": [
+        7,
+        500000000
+      ]
+    },
+    {
+      "width": 238,
+      "height": 158,
+      "known": 28668,
+      "stamp": [
+        8,
+        0
+      ]
+    },
+    {
+      "width": 238,
+      "height": 158,
+      "known": 28897,
+      "stamp": [
+        8,
+        500000000
+      ]
+    },
+    {
+      "width": 238,
+      "height": 158,
+      "known": 29254,
+      "stamp": [
+        9,
+        0
+      ]
+    },
+    {
+      "width": 238,
+      "height": 158,
+      "known": 29378,
+      "stamp": [
+        9,
+        500000000
+      ]
+    },
+    {
+      "width": 238,
+      "height": 158,
+      "known": 29378,
+      "stamp": [
+        9,
+        900000000
+      ]
+    },
+    {
+      "width": 238,
+      "height": 158,
+      "known": 29378,
+      "stamp": [
+        10,
+        400000000
+      ]
+    },
+    {
+      "width": 238,
+      "height": 158,
+      "known": 29378,
+      "stamp": [
+        10,
+        900000000
+      ]
+    },
+    {
+      "width": 238,
+      "height": 158,
+      "known": 29378,
+      "stamp": [
+        11,
+        300000000
+      ]
+    },
+    {
+      "width": 238,
+      "height": 158,
+      "known": 29378,
+      "stamp": [
+        11,
+        900000000
+      ]
+    },
+    {
+      "width": 238,
+      "height": 158,
+      "known": 29378,
+      "stamp": [
+        12,
+        300000000
+      ]
+    },
+    {
+      "width": 238,
+      "height": 158,
+      "known": 29463,
+      "stamp": [
+        12,
+        800000000
+      ]
+    },
+    {
+      "width": 238,
+      "height": 159,
+      "known": 29694,
+      "stamp": [
+        13,
+        200000000
+      ]
+    },
+    {
+      "width": 238,
+      "height": 159,
+      "known": 29845,
+      "stamp": [
+        13,
+        700000000
+      ]
+    },
+    {
+      "width": 238,
+      "height": 159,
+      "known": 29930,
+      "stamp": [
+        14,
+        200000000
+      ]
+    },
+    {
+      "width": 238,
+      "height": 159,
+      "known": 30150,
+      "stamp": [
+        14,
+        700000000
+      ]
+    },
+    {
+      "width": 238,
+      "height": 159,
+      "known": 30252,
+      "stamp": [
+        15,
+        100000000
+      ]
+    },
+    {
+      "width": 238,
+      "height": 159,
+      "known": 30252,
+      "stamp": [
+        15,
+        600000000
+      ]
+    },
+    {
+      "width": 238,
+      "height": 159,
+      "known": 30252,
+      "stamp": [
+        16,
+        100000000
+      ]
+    },
+    {
+      "width": 238,
+      "height": 159,
+      "known": 30252,
+      "stamp": [
+        16,
+        600000000
+      ]
+    }
+  ],
+  "scan_messages": 142,
+  "odom_messages": 412,
+  "map_to_odom_observed": true,
+  "map_changed_during_motion": true
+}

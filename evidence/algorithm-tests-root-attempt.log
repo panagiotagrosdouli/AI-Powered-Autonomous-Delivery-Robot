@@ -1,0 +1,53 @@
+test_algorithms (unittest.loader._FailedTest.test_algorithms) ... ERROR
+test_invalid (unittest.loader._FailedTest.test_invalid) ... ERROR
+test_perception (unittest.loader._FailedTest.test_perception) ... ERROR
+
+======================================================================
+ERROR: test_algorithms (unittest.loader._FailedTest.test_algorithms)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_algorithms
+Traceback (most recent call last):
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+  File "/workspace/work/robot/ros2_ws/src/delivery_robot/test/test_algorithms.py", line 2, in <module>
+    from delivery_robot.algorithms import Tracker, gate_velocity, scan_clearance, will_conflict
+ModuleNotFoundError: No module named 'delivery_robot'
+
+
+======================================================================
+ERROR: test_invalid (unittest.loader._FailedTest.test_invalid)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_invalid
+Traceback (most recent call last):
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+  File "/workspace/work/robot/ros2_ws/src/delivery_robot/test/test_invalid.py", line 3, in <module>
+    from delivery_robot.algorithms import Tracker, gate_velocity
+ModuleNotFoundError: No module named 'delivery_robot'
+
+
+======================================================================
+ERROR: test_perception (unittest.loader._FailedTest.test_perception)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_perception
+Traceback (most recent call last):
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+  File "/workspace/work/robot/ros2_ws/src/delivery_robot/test/test_perception.py", line 3, in <module>
+    from delivery_robot.perception import deproject,transform_point
+ModuleNotFoundError: No module named 'delivery_robot'
+
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (errors=3)

@@ -1,0 +1,16 @@
+{
+  "condition": "A",
+  "kind": "actual static-world Gazebo Nav2 trial",
+  "success": true,
+  "action_status": 4,
+  "goal_map_xy": [
+    1.0,
+    0.0
+  ],
+  "simulated_navigation_time_s": 4.055000000000001,
+  "map_to_odom_valid": true,
+  "amcl_pose_messages": 15,
+  "odometry_path_length_m": 0.8732213431617354,
+  "wall_seconds": 6.434027294000089,
+  "collision_rate": "NOT MEASURED; no contact instrumentation"
+}

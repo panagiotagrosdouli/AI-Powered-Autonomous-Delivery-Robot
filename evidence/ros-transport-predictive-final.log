@@ -1,0 +1,1 @@
+{"test": "ROS transport, not Gazebo", "passed": true, "outputs": 90, "forecast_messages": 45, "fresh_command_passed": true, "prediction_conflict_stopped": true, "stale_observation_stopped": true}

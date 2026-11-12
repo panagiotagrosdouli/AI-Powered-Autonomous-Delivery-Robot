@@ -1,0 +1,31 @@
+{
+  "kind": "ACTUAL GAZEBO SIMULATION; direct motion test, not autonomous navigation",
+  "messages": {
+    "scan": 40,
+    "odom": 118,
+    "rgb": 40,
+    "depth": 38
+  },
+  "frames": {
+    "odom": [
+      "odom",
+      "base_link"
+    ],
+    "depth": "camera_optical_frame",
+    "scan": "laser",
+    "rgb": "camera_optical_frame"
+  },
+  "initial_odom_xy": [
+    -3.421826069594528e-18,
+    8.318458128891119e-36
+  ],
+  "final_odom_xy": [
+    0.5966000000076719,
+    -1.1765365954353385e-12
+  ],
+  "odometry_displacement_m": 0.5966000000076719,
+  "min_finite_scan_range_m": 1.2880550622940063,
+  "passed": true,
+  "depth_encoding": "32FC1",
+  "finite_positive_depth_pixels": 69754
+}
