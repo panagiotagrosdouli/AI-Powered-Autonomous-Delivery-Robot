@@ -1,4 +1,4 @@
-name: Algorithm tests
+name: Algorithm and trajectory tests
 on: [push, pull_request]
 jobs:
   test:
@@ -8,6 +8,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python -m compileall -q ros2_ws/src/delivery_robot/delivery_robot
+      - run: python -m compileall -q ros2_ws/src/delivery_robot/delivery_robot trajectory_forecasting
       - run: python -m unittest discover -s test -p 'test_*.py' -v
         working-directory: ros2_ws/src/delivery_robot
+      - run: python -m unittest discover -s trajectory_forecasting/test -v
