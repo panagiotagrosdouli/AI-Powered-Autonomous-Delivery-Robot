@@ -12,7 +12,7 @@ sudo apt-get update
 sudo apt-get install -y \
   python3-colcon-common-extensions \
   ros-jazzy-navigation2 ros-jazzy-nav2-bringup \
-  ros-jazzy-nav2-minimal-tb3 ros-jazzy-slam-toolbox \
+  'ros-jazzy-nav2-minimal-tb*' ros-jazzy-slam-toolbox \
   ros-jazzy-nav2-map-server ros-jazzy-teleop-twist-keyboard
 source /opt/ros/jazzy/setup.bash
 cd "$(dirname "$0")/../ros2_ws"
