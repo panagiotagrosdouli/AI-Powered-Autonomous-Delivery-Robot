@@ -14,6 +14,7 @@ setup(name=name, version='0.1.0', packages=find_packages(exclude=['test']),
       maintainer='Project Maintainer', maintainer_email='maintainer@example.com',
       description='Predictive pedestrian-aware navigation prototype', license='MIT',
       entry_points={'console_scripts': [
+          'perception = delivery_robot.live_perception:main',
           'predictor = delivery_robot.nodes:predictor_main',
           'supervisor = delivery_robot.nodes:supervisor_main',
           'demo_people = delivery_robot.nodes:demo_main',

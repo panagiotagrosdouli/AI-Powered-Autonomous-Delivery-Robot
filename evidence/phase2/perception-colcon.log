@@ -1,0 +1,29 @@
+Starting >>> delivery_interfaces
+Finished <<< delivery_interfaces [0.94s]
+Starting >>> delivery_robot
+Finished <<< delivery_robot [1.87s]
+
+Summary: 2 packages finished [3.06s]
+Starting >>> delivery_interfaces
+Finished <<< delivery_interfaces [0.03s]
+Starting >>> delivery_robot
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+cachedir: /project/ros2_ws/build/delivery_robot/.pytest_cache
+rootdir: /project/ros2_ws/src/delivery_robot
+plugins: ament-xmllint-0.17.5, launch-testing-3.4.12, ament-flake8-0.17.5, ament-pep257-0.17.5, ament-lint-0.17.5, launch-testing-ros-0.26.13, ament-copyright-0.17.5, colcon-core-0.21.3
+collected 23 items
+
+test/test_algorithms.py ......                                           [ 26%]
+test/test_clearance.py ..                                                [ 34%]
+test/test_invalid.py ....                                                [ 52%]
+test/test_perception.py ....                                             [ 69%]
+test/test_rgbd.py ...                                                    [ 82%]
+test/test_tracking.py ....                                               [100%]
+
+----- generated xml file: /project/ros2_ws/build/delivery_robot/pytest.xml -----
+============================== 23 passed in 0.16s ==============================
+Finished <<< delivery_robot [0.83s]
+
+Summary: 2 packages finished [1.11s]
+Summary: 23 tests, 0 errors, 0 failures, 0 skipped

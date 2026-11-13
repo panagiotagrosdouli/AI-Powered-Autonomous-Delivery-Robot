@@ -1,15 +1,16 @@
 """ROS 2 integration. All pedestrian positions are in odom metres."""
 from math import atan2, sin, cos, isfinite
 from rclpy.qos import qos_profile_sensor_data
-from delivery_interfaces.msg import PredictedTrack, PredictedTracks
+from delivery_interfaces.msg import PredictedTrack, PredictedTracks, TrackedPeople
 from builtin_interfaces.msg import Duration
 from geometry_msgs.msg import Point
 import rclpy
+from rclpy.executors import ExternalShutdownException
 from rclpy.node import Node
 from geometry_msgs.msg import Pose, PoseArray, Twist
 from nav_msgs.msg import Odometry
 from sensor_msgs.msg import LaserScan
-from .algorithms import Tracker, scan_clearance, gate_velocity
+from .algorithms import Track, Tracker, scan_clearance, gate_velocity
 
 
 class Predictor(Node):
@@ -27,7 +28,13 @@ class Predictor(Node):
         if checkpoint:
             from .neural import NeuralAdapter
             self.neural = NeuralAdapter(checkpoint, allow_synthetic)
-        self.create_subscription(PoseArray, '/detected_people', self.on_people, 10)
+        self.input_mode = self.declare_parameter('input_mode', 'pose_array').value
+        if self.input_mode == 'tracked':
+            self.create_subscription(TrackedPeople, '/tracked_people', self.on_tracks, 10)
+        elif self.input_mode == 'pose_array':
+            self.create_subscription(PoseArray, '/detected_people', self.on_people, 10)
+        else:
+            raise ValueError('Unknown predictor input mode')
         self.pub = self.create_publisher(PredictedTracks, '/predicted_people', 10)
         self.create_timer(0.1, self.publish)
 
@@ -50,6 +57,25 @@ class Predictor(Node):
         self.observations_at = stamp
         if self.neural is not None:
             self.neural.update(self.tracker.tracks)
+
+    def on_tracks(self, msg):
+        stamp = msg.header.stamp.sec + msg.header.stamp.nanosec / 1e9
+        if msg.header.frame_id != 'odom' or not 0 <= self.now()-stamp <= .6:
+            return
+        if self.observations_at is not None and stamp <= self.observations_at:
+            return
+        tracks = {}
+        for p in msg.people:
+            observed = p.observed_at.sec + p.observed_at.nanosec / 1e9
+            if p.track_id in tracks or not 0 <= stamp-observed <= .6:
+                return
+            if not all(isfinite(v) for v in (p.position.x,p.position.y,p.velocity.x,p.velocity.y)):
+                return
+            tracks[p.track_id] = Track(p.position.x,p.position.y,p.velocity.x,p.velocity.y,observed)
+        self.tracker.tracks = tracks
+        self.observations_at = stamp
+        if self.neural is not None:
+            self.neural.update(tracks)
 
     def publish(self):
         if self.observations_at is None:
@@ -199,9 +225,11 @@ def run(cls, args=None):
     node = cls()
     try:
         rclpy.spin(node)
+    except (KeyboardInterrupt, ExternalShutdownException):
+        pass
     finally:
         node.destroy_node()
-        rclpy.shutdown()
+        rclpy.try_shutdown()
 
 
 def predictor_main(args=None):

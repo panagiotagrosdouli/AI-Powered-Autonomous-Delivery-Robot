@@ -1,3 +1,5 @@
+> Continuation (2026-11-13): live synchronized RGB-D code and persistent tracking are now implemented. Synthetic observation-time TF integration and an actual empty-scene Gazebo camera/HOG run passed. This does not validate positive live pedestrian detections. See [LIVE_PERCEPTION.md](LIVE_PERCEPTION.md); the numerical foundation evidence below is retained from the first delivery.
+
 # Mandatory delivery status — 2026-11-12
 
 **Overall: INCOMPLETE research project.** No evidence yet establishes a benefit
@@ -106,8 +108,7 @@ is retained as a session checkpoint; see pinned setup instructions to rebuild.
 
 ## NOT IMPLEMENTED
 
-Live synchronized YOLO RGB-D ROS detections, observation-time TF conversion and
-robust multi-person tracking; verified detection dataset acquisition/evaluation;
+Positive live pedestrian detection/evaluation and deployment-quality identity tracking; verified detection dataset acquisition/evaluation;
 semantic pickup/delivery mission manager; ground-truth/contact collision recorder;
 real-data resource-consumption benchmarking and full experimental orchestration.
 Calibrated model uncertainty and safety-certified braking are unsupported.

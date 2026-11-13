@@ -29,7 +29,7 @@ jobs:
       - uses: actions/checkout@v4
       - run: |
           apt-get update
-          apt-get install -y --no-install-recommends build-essential python3-colcon-common-extensions python3-pytest ros-jazzy-rosidl-default-generators ros-jazzy-launch-ros ros-jazzy-geometry-msgs ros-jazzy-nav-msgs ros-jazzy-sensor-msgs
+          apt-get install -y --no-install-recommends build-essential python3-colcon-common-extensions python3-pytest ros-jazzy-rosidl-default-generators ros-jazzy-launch-ros ros-jazzy-geometry-msgs ros-jazzy-nav-msgs ros-jazzy-sensor-msgs ros-jazzy-cv-bridge ros-jazzy-message-filters python3-opencv
       - shell: bash
         run: |
           source /opt/ros/jazzy/setup.bash
@@ -38,3 +38,7 @@ jobs:
           source install/setup.bash
           cd ..
           python3 scripts/test_ros_transport.py
+          python3 scripts/test_live_perception.py
+          cd ros2_ws
+          colcon test
+          colcon test-result --verbose
