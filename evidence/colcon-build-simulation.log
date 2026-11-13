@@ -1,0 +1,6 @@
+Starting >>> delivery_interfaces
+Finished <<< delivery_interfaces [0.54s]
+Starting >>> delivery_robot
+Finished <<< delivery_robot [1.25s]
+
+Summary: 2 packages finished [1.95s]

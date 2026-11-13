@@ -1,13 +1,44 @@
-name: Algorithm tests
-on: [push, pull_request]
+name: Research and ROS checks
+on: [push, pull_request, workflow_dispatch]
 jobs:
-  test:
+  algorithms:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python -m compileall -q ros2_ws/src/delivery_robot/delivery_robot
-      - run: python -m unittest discover -s test -p 'test_*.py' -v
-        working-directory: ros2_ws/src/delivery_robot
+      - run: pip install numpy==2.5.4 torch==2.5.1 --index-url https://download.pytorch.org/whl/cpu
+      - run: python -m unittest discover -s ros2_ws/src/delivery_robot/test -v
+        env:
+          PYTHONPATH: ros2_ws/src/delivery_robot
+      - run: python -m unittest discover -s tests -v
+        env:
+          PYTHONPATH: ros2_ws/src/delivery_robot
+      - run: |
+          python -m research.synthetic_fixture /tmp/synthetic-trajectories
+          python -m research.train --manifest /tmp/synthetic-trajectories/manifest.json --kind gru --epochs 2 --output /tmp/synthetic-training
+      - uses: actions/upload-artifact@v4
+        with:
+          name: synthetic-software-test-not-pedestrian-benchmark
+          path: /tmp/synthetic-training
+  jazzy:
+    runs-on: ubuntu-24.04
+    container: ros:jazzy-ros-base
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          apt-get update
+          apt-get install -y --no-install-recommends build-essential python3-colcon-common-extensions python3-pytest ros-jazzy-rosidl-default-generators ros-jazzy-launch-ros ros-jazzy-geometry-msgs ros-jazzy-nav-msgs ros-jazzy-sensor-msgs ros-jazzy-cv-bridge ros-jazzy-message-filters python3-opencv
+      - shell: bash
+        run: |
+          source /opt/ros/jazzy/setup.bash
+          cd ros2_ws
+          colcon build --symlink-install
+          source install/setup.bash
+          cd ..
+          python3 scripts/test_ros_transport.py
+          python3 scripts/test_live_perception.py
+          cd ros2_ws
+          colcon test
+          colcon test-result --verbose

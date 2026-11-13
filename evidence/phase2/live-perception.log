@@ -1,0 +1,79 @@
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-11-13-06-25-30-593252-09688001f610-154
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [perception-1]: process started with pid [158]
+[INFO] [predictor-2]: process started with pid [159]
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [predictor-2]: sending signal 'SIGINT' to process[predictor-2]
+[INFO] [perception-1]: sending signal 'SIGINT' to process[perception-1]
+[perception-1] Traceback (most recent call last):
+[perception-1]   File "/project/ros2_ws/build/delivery_robot/delivery_robot/live_perception.py", line 104, in main
+[perception-1]     try:rclpy.spin(node)
+[perception-1]         ^^^^^^^^^^^^^^^^
+[perception-1]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py", line 247, in spin
+[perception-1]     executor.spin_once()
+[perception-1]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 926, in spin_once
+[perception-1]     self._spin_once_impl(timeout_sec)
+[perception-1]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 907, in _spin_once_impl
+[perception-1]     handler, entity, node = self.wait_for_ready_callbacks(
+[predictor-2] Traceback (most recent call last):
+[predictor-2]   File "/project/ros2_ws/build/delivery_robot/delivery_robot/nodes.py", line 226, in run
+[predictor-2]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py", line 247, in spin
+[predictor-2]     executor.spin_once()
+[predictor-2]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 926, in spin_once
+[predictor-2]     self._spin_once_impl(timeout_sec)
+[predictor-2]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 907, in _spin_once_impl
+[predictor-2]     handler, entity, node = self.wait_for_ready_callbacks(
+[predictor-2]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[predictor-2]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 877, in wait_for_ready_callbacks
+[perception-1]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[perception-1]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 877, in wait_for_ready_callbacks
+[perception-1]     return next(self._cb_iter)
+[perception-1]            ^^^^^^^^^^^^^^^^^^^
+[perception-1]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 781, in _wait_for_ready_callbacks
+[perception-1]     wait_set.wait(timeout_nsec)
+[perception-1] KeyboardInterrupt
+[perception-1] 
+[perception-1] During handling of the above exception, another exception occurred:
+[perception-1] 
+[perception-1] Traceback (most recent call last):
+[perception-1]   File "/project/ros2_ws/install/delivery_robot/lib/delivery_robot/perception", line 33, in <module>
+[perception-1]     sys.exit(load_entry_point('delivery-robot', 'console_scripts', 'perception')())
+[perception-1]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[perception-1]   File "/project/ros2_ws/build/delivery_robot/delivery_robot/live_perception.py", line 105, in main
+[perception-1]     finally:node.destroy_node();rclpy.shutdown()
+[perception-1]                                 ^^^^^^^^^^^^^^^^
+[perception-1]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py", line 134, in shutdown
+[perception-1]     _shutdown(context=context)
+[perception-1]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/utilities.py", line 82, in shutdown
+[predictor-2]     return next(self._cb_iter)
+[perception-1]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/context.py", line 129, in shutdown
+[perception-1]     self.__context.shutdown()
+[perception-1] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:333
+[predictor-2]            ^^^^^^^^^^^^^^^^^^^
+[predictor-2]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 803, in _wait_for_ready_callbacks
+[predictor-2]     if wt in waitables and wt.is_ready(wait_set):
+[predictor-2]                            ^^^^^^^^^^^^^^^^^^^^^
+[predictor-2]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/event_handler.py", line 100, in is_ready
+[predictor-2]     if wait_set.is_ready('event', self._event_index):
+[predictor-2]        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[predictor-2] KeyboardInterrupt
+[predictor-2] 
+[predictor-2] During handling of the above exception, another exception occurred:
+[predictor-2] 
+[predictor-2] Traceback (most recent call last):
+[predictor-2]   File "/project/ros2_ws/install/delivery_robot/lib/delivery_robot/predictor", line 33, in <module>
+[predictor-2]     sys.exit(load_entry_point('delivery-robot', 'console_scripts', 'predictor')())
+[predictor-2]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[predictor-2]   File "/project/ros2_ws/build/delivery_robot/delivery_robot/nodes.py", line 233, in predictor_main
+[predictor-2]     run(Predictor, args)
+[predictor-2]   File "/project/ros2_ws/build/delivery_robot/delivery_robot/nodes.py", line 229, in run
+[predictor-2]     rclpy.shutdown()
+[predictor-2]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py", line 134, in shutdown
+[predictor-2]     _shutdown(context=context)
+[predictor-2]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/utilities.py", line 82, in shutdown
+[predictor-2]     context.shutdown()
+[predictor-2]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/context.py", line 129, in shutdown
+[predictor-2]     self.__context.shutdown()
+[predictor-2] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:333
+[ERROR] [perception-1]: process has died [pid 158, exit code 1, cmd '/project/ros2_ws/install/delivery_robot/lib/delivery_robot/perception --ros-args --params-file /tmp/launch_params_tij0dyjv'].
+[ERROR] [predictor-2]: process has died [pid 159, exit code 1, cmd '/project/ros2_ws/install/delivery_robot/lib/delivery_robot/predictor --ros-args --params-file /tmp/launch_params_z_y99ii5'].

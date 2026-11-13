@@ -1,0 +1,797 @@
+{
+  "source": "https://www.dropbox.com/s/8n02xqv3l9q18r1/datasets.zip?dl=1",
+  "source_script": "https://github.com/agrimgupta92/sgan/blob/691231e1adb6a344c7bcea9ebf2534518b226ead/scripts/download_data.sh",
+  "archive_sha256": "f62be0aaafd49ba2923954c398f2513419d2627911ce673ebc880127974d2c7f",
+  "real_recorded_trajectory_archive": true,
+  "license_verified": false,
+  "license_note": "No dataset license found in archive. Code MIT license does not establish dataset rights.",
+  "coordinate_units": "Upstream processed coordinates; metric units require original dataset verification",
+  "sampling": "Frame indices preserved; seconds conversion requires source metadata verification",
+  "training_status": "BLOCKED pending verified dataset terms, coordinate and sampling metadata",
+  "files": [
+    {
+      "path": "datasets/hotel/train/crowds_zara01_train.txt",
+      "sha256": "5b2ff1a334f4b3e8595e0ee898874b1795561db7bde97e90cbc4a1382c8c3d56",
+      "rows": 4307,
+      "tracks": 125,
+      "frame_min": 0.0,
+      "frame_max": 7100.0
+    },
+    {
+      "path": "datasets/hotel/train/crowds_zara02_train.txt",
+      "sha256": "9fd606341135d7d211c3af259c9eb2c25e4c7035efc43d3007ceeef6f954b247",
+      "rows": 7621,
+      "tracks": 171,
+      "frame_min": 10.0,
+      "frame_max": 8410.0
+    },
+    {
+      "path": "datasets/hotel/train/uni_examples_train.txt",
+      "sha256": "06866bea5c2f589094473371e9fb6b653c7af95e5f748434bc1024544c5e1c7a",
+      "rows": 2266,
+      "tracks": 96,
+      "frame_min": 0.0,
+      "frame_max": 5930.0
+    },
+    {
+      "path": "datasets/hotel/train/students001_train.txt",
+      "sha256": "f41a0a63301e1c15104205c4a1540db477ddc3330ee2801a976d7b9fc238a63e",
+      "rows": 18353,
+      "tracks": 375,
+      "frame_min": 0.0,
+      "frame_max": 3540.0
+    },
+    {
+      "path": "datasets/hotel/train/crowds_zara03_train.txt",
+      "sha256": "d38a0a6cd1e24adadbb3b15cac97b747e5c6ace2c59d457d805f38a4d91d5a03",
+      "rows": 3708,
+      "tracks": 106,
+      "frame_min": 0.0,
+      "frame_max": 6020.0
+    },
+    {
+      "path": "datasets/hotel/train/students003_train.txt",
+      "sha256": "85fe6324e9a0b94acb21617eb0331f543fe5ebf0caee1e253794bca554f35daf",
+      "rows": 15641,
+      "tracks": 364,
+      "frame_min": 0.0,
+      "frame_max": 4310.0
+    },
+    {
+      "path": "datasets/hotel/train/biwi_eth_train.txt",
+      "sha256": "7905d1337f8466c3ebcd80e8264158209370e939774a371d215491256128407e",
+      "rows": 3666,
+      "tracks": 250,
+      "frame_min": 780.0,
+      "frame_max": 10230.0
+    },
+    {
+      "path": "datasets/hotel/val/students001_val.txt",
+      "sha256": "dc8f3147820e80642903041b017292eb03ea5df81ffd2974b47a725d8ffeb394",
+      "rows": 3460,
+      "tracks": 96,
+      "frame_min": 3550.0,
+      "frame_max": 4430.0
+    },
+    {
+      "path": "datasets/hotel/val/students003_val.txt",
+      "sha256": "b7aa6dcedba0e9036272dc363e2a25e6bb80d7485d75dcb3fff918ce01b10e24",
+      "rows": 2312,
+      "tracks": 92,
+      "frame_min": 4320.0,
+      "frame_max": 5400.0
+    },
+    {
+      "path": "datasets/hotel/val/uni_examples_val.txt",
+      "sha256": "436dfa865ffab37957e928e227a1b6cc836ab0e6b7652abbf5d06cdf5638dee4",
+      "rows": 481,
+      "tracks": 24,
+      "frame_min": 5940.0,
+      "frame_max": 7410.0
+    },
+    {
+      "path": "datasets/hotel/val/crowds_zara03_val.txt",
+      "sha256": "60d464e21fd3851fab146ec3b35d0db4155b3c057f4b46050336eac59314f0f5",
+      "rows": 1297,
+      "tracks": 33,
+      "frame_min": 6030.0,
+      "frame_max": 7530.0
+    },
+    {
+      "path": "datasets/hotel/val/crowds_zara01_val.txt",
+      "sha256": "d5212e4e3289aa44365e5ce34a476ef2a4208c89bd6a29204ece097c7f33c157",
+      "rows": 846,
+      "tracks": 29,
+      "frame_min": 7110.0,
+      "frame_max": 9010.0
+    },
+    {
+      "path": "datasets/hotel/val/crowds_zara02_val.txt",
+      "sha256": "361949e5655814680e1185bdd23344932f7b6ccc0d7120c34b523495d0fc69f8",
+      "rows": 2101,
+      "tracks": 47,
+      "frame_min": 8420.0,
+      "frame_max": 10520.0
+    },
+    {
+      "path": "datasets/hotel/val/biwi_eth_val.txt",
+      "sha256": "ed19f8ee52e024788658d70060c1452b991aa506b78ea649c74f79e075ad20b9",
+      "rows": 1826,
+      "tracks": 120,
+      "frame_min": 10240.0,
+      "frame_max": 12380.0
+    },
+    {
+      "path": "datasets/hotel/test/biwi_hotel.txt",
+      "sha256": "9caa771bb9153d6b809dd0916b6f86761b641e6bbb15e766c1de3133fbbb7fcf",
+      "rows": 6543,
+      "tracks": 389,
+      "frame_min": 0.0,
+      "frame_max": 18060.0
+    },
+    {
+      "path": "datasets/univ/train/biwi_hotel_train.txt",
+      "sha256": "f3f485043273e3d972efd73770df0021ec7d3d5135f60d2e2ca5809f68d6f104",
+      "rows": 4946,
+      "tracks": 311,
+      "frame_min": 0.0,
+      "frame_max": 14390.0
+    },
+    {
+      "path": "datasets/univ/train/crowds_zara01_train.txt",
+      "sha256": "5b2ff1a334f4b3e8595e0ee898874b1795561db7bde97e90cbc4a1382c8c3d56",
+      "rows": 4307,
+      "tracks": 125,
+      "frame_min": 0.0,
+      "frame_max": 7100.0
+    },
+    {
+      "path": "datasets/univ/train/crowds_zara02_train.txt",
+      "sha256": "9fd606341135d7d211c3af259c9eb2c25e4c7035efc43d3007ceeef6f954b247",
+      "rows": 7621,
+      "tracks": 171,
+      "frame_min": 10.0,
+      "frame_max": 8410.0
+    },
+    {
+      "path": "datasets/univ/train/uni_examples_train.txt",
+      "sha256": "06866bea5c2f589094473371e9fb6b653c7af95e5f748434bc1024544c5e1c7a",
+      "rows": 2266,
+      "tracks": 96,
+      "frame_min": 0.0,
+      "frame_max": 5930.0
+    },
+    {
+      "path": "datasets/univ/train/crowds_zara03_train.txt",
+      "sha256": "d38a0a6cd1e24adadbb3b15cac97b747e5c6ace2c59d457d805f38a4d91d5a03",
+      "rows": 3708,
+      "tracks": 106,
+      "frame_min": 0.0,
+      "frame_max": 6020.0
+    },
+    {
+      "path": "datasets/univ/train/biwi_eth_train.txt",
+      "sha256": "7905d1337f8466c3ebcd80e8264158209370e939774a371d215491256128407e",
+      "rows": 3666,
+      "tracks": 250,
+      "frame_min": 780.0,
+      "frame_max": 10230.0
+    },
+    {
+      "path": "datasets/univ/val/uni_examples_val.txt",
+      "sha256": "436dfa865ffab37957e928e227a1b6cc836ab0e6b7652abbf5d06cdf5638dee4",
+      "rows": 481,
+      "tracks": 24,
+      "frame_min": 5940.0,
+      "frame_max": 7410.0
+    },
+    {
+      "path": "datasets/univ/val/crowds_zara03_val.txt",
+      "sha256": "60d464e21fd3851fab146ec3b35d0db4155b3c057f4b46050336eac59314f0f5",
+      "rows": 1297,
+      "tracks": 33,
+      "frame_min": 6030.0,
+      "frame_max": 7530.0
+    },
+    {
+      "path": "datasets/univ/val/crowds_zara01_val.txt",
+      "sha256": "d5212e4e3289aa44365e5ce34a476ef2a4208c89bd6a29204ece097c7f33c157",
+      "rows": 846,
+      "tracks": 29,
+      "frame_min": 7110.0,
+      "frame_max": 9010.0
+    },
+    {
+      "path": "datasets/univ/val/crowds_zara02_val.txt",
+      "sha256": "361949e5655814680e1185bdd23344932f7b6ccc0d7120c34b523495d0fc69f8",
+      "rows": 2101,
+      "tracks": 47,
+      "frame_min": 8420.0,
+      "frame_max": 10520.0
+    },
+    {
+      "path": "datasets/univ/val/biwi_eth_val.txt",
+      "sha256": "ed19f8ee52e024788658d70060c1452b991aa506b78ea649c74f79e075ad20b9",
+      "rows": 1826,
+      "tracks": 120,
+      "frame_min": 10240.0,
+      "frame_max": 12380.0
+    },
+    {
+      "path": "datasets/univ/val/biwi_hotel_val.txt",
+      "sha256": "5c6026c5c6feb81295187e2e063d86197344428811ac2ae98a45bdfb5dfa79ed",
+      "rows": 1597,
+      "tracks": 81,
+      "frame_min": 14400.0,
+      "frame_max": 18060.0
+    },
+    {
+      "path": "datasets/univ/test/students001.txt",
+      "sha256": "a6d87f278d94136fe39b8be91555487a29ac77259ae403b9dba2d5c18caf7b5b",
+      "rows": 21813,
+      "tracks": 415,
+      "frame_min": 0.0,
+      "frame_max": 4430.0
+    },
+    {
+      "path": "datasets/univ/test/students003.txt",
+      "sha256": "e25798b660634330aa89f8bb259425de720e84d0873902726c1d1f4ccff21d6c",
+      "rows": 17953,
+      "tracks": 434,
+      "frame_min": 0.0,
+      "frame_max": 5400.0
+    },
+    {
+      "path": "datasets/eth/train/biwi_hotel_train.txt",
+      "sha256": "f3f485043273e3d972efd73770df0021ec7d3d5135f60d2e2ca5809f68d6f104",
+      "rows": 4946,
+      "tracks": 311,
+      "frame_min": 0.0,
+      "frame_max": 14390.0
+    },
+    {
+      "path": "datasets/eth/train/crowds_zara01_train.txt",
+      "sha256": "5b2ff1a334f4b3e8595e0ee898874b1795561db7bde97e90cbc4a1382c8c3d56",
+      "rows": 4307,
+      "tracks": 125,
+      "frame_min": 0.0,
+      "frame_max": 7100.0
+    },
+    {
+      "path": "datasets/eth/train/crowds_zara02_train.txt",
+      "sha256": "9fd606341135d7d211c3af259c9eb2c25e4c7035efc43d3007ceeef6f954b247",
+      "rows": 7621,
+      "tracks": 171,
+      "frame_min": 10.0,
+      "frame_max": 8410.0
+    },
+    {
+      "path": "datasets/eth/train/uni_examples_train.txt",
+      "sha256": "06866bea5c2f589094473371e9fb6b653c7af95e5f748434bc1024544c5e1c7a",
+      "rows": 2266,
+      "tracks": 96,
+      "frame_min": 0.0,
+      "frame_max": 5930.0
+    },
+    {
+      "path": "datasets/eth/train/students001_train.txt",
+      "sha256": "f41a0a63301e1c15104205c4a1540db477ddc3330ee2801a976d7b9fc238a63e",
+      "rows": 18353,
+      "tracks": 375,
+      "frame_min": 0.0,
+      "frame_max": 3540.0
+    },
+    {
+      "path": "datasets/eth/train/crowds_zara03_train.txt",
+      "sha256": "d38a0a6cd1e24adadbb3b15cac97b747e5c6ace2c59d457d805f38a4d91d5a03",
+      "rows": 3708,
+      "tracks": 106,
+      "frame_min": 0.0,
+      "frame_max": 6020.0
+    },
+    {
+      "path": "datasets/eth/train/students003_train.txt",
+      "sha256": "85fe6324e9a0b94acb21617eb0331f543fe5ebf0caee1e253794bca554f35daf",
+      "rows": 15641,
+      "tracks": 364,
+      "frame_min": 0.0,
+      "frame_max": 4310.0
+    },
+    {
+      "path": "datasets/eth/val/students001_val.txt",
+      "sha256": "dc8f3147820e80642903041b017292eb03ea5df81ffd2974b47a725d8ffeb394",
+      "rows": 3460,
+      "tracks": 96,
+      "frame_min": 3550.0,
+      "frame_max": 4430.0
+    },
+    {
+      "path": "datasets/eth/val/students003_val.txt",
+      "sha256": "b7aa6dcedba0e9036272dc363e2a25e6bb80d7485d75dcb3fff918ce01b10e24",
+      "rows": 2312,
+      "tracks": 92,
+      "frame_min": 4320.0,
+      "frame_max": 5400.0
+    },
+    {
+      "path": "datasets/eth/val/uni_examples_val.txt",
+      "sha256": "436dfa865ffab37957e928e227a1b6cc836ab0e6b7652abbf5d06cdf5638dee4",
+      "rows": 481,
+      "tracks": 24,
+      "frame_min": 5940.0,
+      "frame_max": 7410.0
+    },
+    {
+      "path": "datasets/eth/val/crowds_zara03_val.txt",
+      "sha256": "60d464e21fd3851fab146ec3b35d0db4155b3c057f4b46050336eac59314f0f5",
+      "rows": 1297,
+      "tracks": 33,
+      "frame_min": 6030.0,
+      "frame_max": 7530.0
+    },
+    {
+      "path": "datasets/eth/val/crowds_zara01_val.txt",
+      "sha256": "d5212e4e3289aa44365e5ce34a476ef2a4208c89bd6a29204ece097c7f33c157",
+      "rows": 846,
+      "tracks": 29,
+      "frame_min": 7110.0,
+      "frame_max": 9010.0
+    },
+    {
+      "path": "datasets/eth/val/crowds_zara02_val.txt",
+      "sha256": "361949e5655814680e1185bdd23344932f7b6ccc0d7120c34b523495d0fc69f8",
+      "rows": 2101,
+      "tracks": 47,
+      "frame_min": 8420.0,
+      "frame_max": 10520.0
+    },
+    {
+      "path": "datasets/eth/val/biwi_hotel_val.txt",
+      "sha256": "5c6026c5c6feb81295187e2e063d86197344428811ac2ae98a45bdfb5dfa79ed",
+      "rows": 1597,
+      "tracks": 81,
+      "frame_min": 14400.0,
+      "frame_max": 18060.0
+    },
+    {
+      "path": "datasets/eth/test/biwi_eth.txt",
+      "sha256": "cf8d3fd342a15f409ebc2a1fc76b91a0f06390bd21f1e11410f3859331ab082b",
+      "rows": 5492,
+      "tracks": 360,
+      "frame_min": 780.0,
+      "frame_max": 12380.0
+    },
+    {
+      "path": "datasets/raw/all_data/crowds_zara03.txt",
+      "sha256": "16b3e899932c4baacd07f45013d5b921f90bc5a29eb2b0fe42f4d7c904ac3108",
+      "rows": 5005,
+      "tracks": 137,
+      "frame_min": 0.0,
+      "frame_max": 7530.0
+    },
+    {
+      "path": "datasets/raw/all_data/crowds_zara01.txt",
+      "sha256": "1147a1962a09abfb86f28c6cddcac862e095a0cf129b3016385b69eacdd09d85",
+      "rows": 5153,
+      "tracks": 148,
+      "frame_min": 0.0,
+      "frame_max": 9010.0
+    },
+    {
+      "path": "datasets/raw/all_data/uni_examples.txt",
+      "sha256": "61f432c0ab3070ed0ef150fbeabcd7baf839cab5495a46e6105bd747f0a092a7",
+      "rows": 2747,
+      "tracks": 118,
+      "frame_min": 0.0,
+      "frame_max": 7410.0
+    },
+    {
+      "path": "datasets/raw/all_data/crowds_zara02.txt",
+      "sha256": "8a649d0f8c9ae75c87c4d23a85f892786b0aa30266e996c7be03e69dafff22ff",
+      "rows": 9722,
+      "tracks": 204,
+      "frame_min": 10.0,
+      "frame_max": 10520.0
+    },
+    {
+      "path": "datasets/raw/all_data/biwi_eth.txt",
+      "sha256": "cf8d3fd342a15f409ebc2a1fc76b91a0f06390bd21f1e11410f3859331ab082b",
+      "rows": 5492,
+      "tracks": 360,
+      "frame_min": 780.0,
+      "frame_max": 12380.0
+    },
+    {
+      "path": "datasets/raw/all_data/biwi_hotel.txt",
+      "sha256": "9caa771bb9153d6b809dd0916b6f86761b641e6bbb15e766c1de3133fbbb7fcf",
+      "rows": 6543,
+      "tracks": 389,
+      "frame_min": 0.0,
+      "frame_max": 18060.0
+    },
+    {
+      "path": "datasets/raw/all_data/students001.txt",
+      "sha256": "a6d87f278d94136fe39b8be91555487a29ac77259ae403b9dba2d5c18caf7b5b",
+      "rows": 21813,
+      "tracks": 415,
+      "frame_min": 0.0,
+      "frame_max": 4430.0
+    },
+    {
+      "path": "datasets/raw/all_data/students003.txt",
+      "sha256": "e25798b660634330aa89f8bb259425de720e84d0873902726c1d1f4ccff21d6c",
+      "rows": 17953,
+      "tracks": 434,
+      "frame_min": 0.0,
+      "frame_max": 5400.0
+    },
+    {
+      "path": "datasets/raw/train/biwi_hotel_train.txt",
+      "sha256": "f3f485043273e3d972efd73770df0021ec7d3d5135f60d2e2ca5809f68d6f104",
+      "rows": 4946,
+      "tracks": 311,
+      "frame_min": 0.0,
+      "frame_max": 14390.0
+    },
+    {
+      "path": "datasets/raw/train/crowds_zara01_train.txt",
+      "sha256": "5b2ff1a334f4b3e8595e0ee898874b1795561db7bde97e90cbc4a1382c8c3d56",
+      "rows": 4307,
+      "tracks": 125,
+      "frame_min": 0.0,
+      "frame_max": 7100.0
+    },
+    {
+      "path": "datasets/raw/train/crowds_zara02_train.txt",
+      "sha256": "9fd606341135d7d211c3af259c9eb2c25e4c7035efc43d3007ceeef6f954b247",
+      "rows": 7621,
+      "tracks": 171,
+      "frame_min": 10.0,
+      "frame_max": 8410.0
+    },
+    {
+      "path": "datasets/raw/train/uni_examples_train.txt",
+      "sha256": "06866bea5c2f589094473371e9fb6b653c7af95e5f748434bc1024544c5e1c7a",
+      "rows": 2266,
+      "tracks": 96,
+      "frame_min": 0.0,
+      "frame_max": 5930.0
+    },
+    {
+      "path": "datasets/raw/train/students001_train.txt",
+      "sha256": "f41a0a63301e1c15104205c4a1540db477ddc3330ee2801a976d7b9fc238a63e",
+      "rows": 18353,
+      "tracks": 375,
+      "frame_min": 0.0,
+      "frame_max": 3540.0
+    },
+    {
+      "path": "datasets/raw/train/crowds_zara03_train.txt",
+      "sha256": "d38a0a6cd1e24adadbb3b15cac97b747e5c6ace2c59d457d805f38a4d91d5a03",
+      "rows": 3708,
+      "tracks": 106,
+      "frame_min": 0.0,
+      "frame_max": 6020.0
+    },
+    {
+      "path": "datasets/raw/train/students003_train.txt",
+      "sha256": "85fe6324e9a0b94acb21617eb0331f543fe5ebf0caee1e253794bca554f35daf",
+      "rows": 15641,
+      "tracks": 364,
+      "frame_min": 0.0,
+      "frame_max": 4310.0
+    },
+    {
+      "path": "datasets/raw/train/biwi_eth_train.txt",
+      "sha256": "7905d1337f8466c3ebcd80e8264158209370e939774a371d215491256128407e",
+      "rows": 3666,
+      "tracks": 250,
+      "frame_min": 780.0,
+      "frame_max": 10230.0
+    },
+    {
+      "path": "datasets/raw/val/students001_val.txt",
+      "sha256": "dc8f3147820e80642903041b017292eb03ea5df81ffd2974b47a725d8ffeb394",
+      "rows": 3460,
+      "tracks": 96,
+      "frame_min": 3550.0,
+      "frame_max": 4430.0
+    },
+    {
+      "path": "datasets/raw/val/students003_val.txt",
+      "sha256": "b7aa6dcedba0e9036272dc363e2a25e6bb80d7485d75dcb3fff918ce01b10e24",
+      "rows": 2312,
+      "tracks": 92,
+      "frame_min": 4320.0,
+      "frame_max": 5400.0
+    },
+    {
+      "path": "datasets/raw/val/uni_examples_val.txt",
+      "sha256": "436dfa865ffab37957e928e227a1b6cc836ab0e6b7652abbf5d06cdf5638dee4",
+      "rows": 481,
+      "tracks": 24,
+      "frame_min": 5940.0,
+      "frame_max": 7410.0
+    },
+    {
+      "path": "datasets/raw/val/crowds_zara03_val.txt",
+      "sha256": "60d464e21fd3851fab146ec3b35d0db4155b3c057f4b46050336eac59314f0f5",
+      "rows": 1297,
+      "tracks": 33,
+      "frame_min": 6030.0,
+      "frame_max": 7530.0
+    },
+    {
+      "path": "datasets/raw/val/crowds_zara01_val.txt",
+      "sha256": "d5212e4e3289aa44365e5ce34a476ef2a4208c89bd6a29204ece097c7f33c157",
+      "rows": 846,
+      "tracks": 29,
+      "frame_min": 7110.0,
+      "frame_max": 9010.0
+    },
+    {
+      "path": "datasets/raw/val/crowds_zara02_val.txt",
+      "sha256": "361949e5655814680e1185bdd23344932f7b6ccc0d7120c34b523495d0fc69f8",
+      "rows": 2101,
+      "tracks": 47,
+      "frame_min": 8420.0,
+      "frame_max": 10520.0
+    },
+    {
+      "path": "datasets/raw/val/biwi_eth_val.txt",
+      "sha256": "ed19f8ee52e024788658d70060c1452b991aa506b78ea649c74f79e075ad20b9",
+      "rows": 1826,
+      "tracks": 120,
+      "frame_min": 10240.0,
+      "frame_max": 12380.0
+    },
+    {
+      "path": "datasets/raw/val/biwi_hotel_val.txt",
+      "sha256": "5c6026c5c6feb81295187e2e063d86197344428811ac2ae98a45bdfb5dfa79ed",
+      "rows": 1597,
+      "tracks": 81,
+      "frame_min": 14400.0,
+      "frame_max": 18060.0
+    },
+    {
+      "path": "datasets/zara2/train/biwi_hotel_train.txt",
+      "sha256": "f3f485043273e3d972efd73770df0021ec7d3d5135f60d2e2ca5809f68d6f104",
+      "rows": 4946,
+      "tracks": 311,
+      "frame_min": 0.0,
+      "frame_max": 14390.0
+    },
+    {
+      "path": "datasets/zara2/train/crowds_zara01_train.txt",
+      "sha256": "5b2ff1a334f4b3e8595e0ee898874b1795561db7bde97e90cbc4a1382c8c3d56",
+      "rows": 4307,
+      "tracks": 125,
+      "frame_min": 0.0,
+      "frame_max": 7100.0
+    },
+    {
+      "path": "datasets/zara2/train/uni_examples_train.txt",
+      "sha256": "06866bea5c2f589094473371e9fb6b653c7af95e5f748434bc1024544c5e1c7a",
+      "rows": 2266,
+      "tracks": 96,
+      "frame_min": 0.0,
+      "frame_max": 5930.0
+    },
+    {
+      "path": "datasets/zara2/train/students001_train.txt",
+      "sha256": "f41a0a63301e1c15104205c4a1540db477ddc3330ee2801a976d7b9fc238a63e",
+      "rows": 18353,
+      "tracks": 375,
+      "frame_min": 0.0,
+      "frame_max": 3540.0
+    },
+    {
+      "path": "datasets/zara2/train/crowds_zara03_train.txt",
+      "sha256": "d38a0a6cd1e24adadbb3b15cac97b747e5c6ace2c59d457d805f38a4d91d5a03",
+      "rows": 3708,
+      "tracks": 106,
+      "frame_min": 0.0,
+      "frame_max": 6020.0
+    },
+    {
+      "path": "datasets/zara2/train/students003_train.txt",
+      "sha256": "85fe6324e9a0b94acb21617eb0331f543fe5ebf0caee1e253794bca554f35daf",
+      "rows": 15641,
+      "tracks": 364,
+      "frame_min": 0.0,
+      "frame_max": 4310.0
+    },
+    {
+      "path": "datasets/zara2/train/biwi_eth_train.txt",
+      "sha256": "7905d1337f8466c3ebcd80e8264158209370e939774a371d215491256128407e",
+      "rows": 3666,
+      "tracks": 250,
+      "frame_min": 780.0,
+      "frame_max": 10230.0
+    },
+    {
+      "path": "datasets/zara2/val/students001_val.txt",
+      "sha256": "dc8f3147820e80642903041b017292eb03ea5df81ffd2974b47a725d8ffeb394",
+      "rows": 3460,
+      "tracks": 96,
+      "frame_min": 3550.0,
+      "frame_max": 4430.0
+    },
+    {
+      "path": "datasets/zara2/val/students003_val.txt",
+      "sha256": "b7aa6dcedba0e9036272dc363e2a25e6bb80d7485d75dcb3fff918ce01b10e24",
+      "rows": 2312,
+      "tracks": 92,
+      "frame_min": 4320.0,
+      "frame_max": 5400.0
+    },
+    {
+      "path": "datasets/zara2/val/uni_examples_val.txt",
+      "sha256": "436dfa865ffab37957e928e227a1b6cc836ab0e6b7652abbf5d06cdf5638dee4",
+      "rows": 481,
+      "tracks": 24,
+      "frame_min": 5940.0,
+      "frame_max": 7410.0
+    },
+    {
+      "path": "datasets/zara2/val/crowds_zara03_val.txt",
+      "sha256": "60d464e21fd3851fab146ec3b35d0db4155b3c057f4b46050336eac59314f0f5",
+      "rows": 1297,
+      "tracks": 33,
+      "frame_min": 6030.0,
+      "frame_max": 7530.0
+    },
+    {
+      "path": "datasets/zara2/val/crowds_zara01_val.txt",
+      "sha256": "d5212e4e3289aa44365e5ce34a476ef2a4208c89bd6a29204ece097c7f33c157",
+      "rows": 846,
+      "tracks": 29,
+      "frame_min": 7110.0,
+      "frame_max": 9010.0
+    },
+    {
+      "path": "datasets/zara2/val/biwi_eth_val.txt",
+      "sha256": "ed19f8ee52e024788658d70060c1452b991aa506b78ea649c74f79e075ad20b9",
+      "rows": 1826,
+      "tracks": 120,
+      "frame_min": 10240.0,
+      "frame_max": 12380.0
+    },
+    {
+      "path": "datasets/zara2/val/biwi_hotel_val.txt",
+      "sha256": "5c6026c5c6feb81295187e2e063d86197344428811ac2ae98a45bdfb5dfa79ed",
+      "rows": 1597,
+      "tracks": 81,
+      "frame_min": 14400.0,
+      "frame_max": 18060.0
+    },
+    {
+      "path": "datasets/zara2/test/crowds_zara02.txt",
+      "sha256": "8a649d0f8c9ae75c87c4d23a85f892786b0aa30266e996c7be03e69dafff22ff",
+      "rows": 9722,
+      "tracks": 204,
+      "frame_min": 10.0,
+      "frame_max": 10520.0
+    },
+    {
+      "path": "datasets/zara1/train/biwi_hotel_train.txt",
+      "sha256": "f3f485043273e3d972efd73770df0021ec7d3d5135f60d2e2ca5809f68d6f104",
+      "rows": 4946,
+      "tracks": 311,
+      "frame_min": 0.0,
+      "frame_max": 14390.0
+    },
+    {
+      "path": "datasets/zara1/train/crowds_zara02_train.txt",
+      "sha256": "9fd606341135d7d211c3af259c9eb2c25e4c7035efc43d3007ceeef6f954b247",
+      "rows": 7621,
+      "tracks": 171,
+      "frame_min": 10.0,
+      "frame_max": 8410.0
+    },
+    {
+      "path": "datasets/zara1/train/uni_examples_train.txt",
+      "sha256": "06866bea5c2f589094473371e9fb6b653c7af95e5f748434bc1024544c5e1c7a",
+      "rows": 2266,
+      "tracks": 96,
+      "frame_min": 0.0,
+      "frame_max": 5930.0
+    },
+    {
+      "path": "datasets/zara1/train/students001_train.txt",
+      "sha256": "f41a0a63301e1c15104205c4a1540db477ddc3330ee2801a976d7b9fc238a63e",
+      "rows": 18353,
+      "tracks": 375,
+      "frame_min": 0.0,
+      "frame_max": 3540.0
+    },
+    {
+      "path": "datasets/zara1/train/crowds_zara03_train.txt",
+      "sha256": "d38a0a6cd1e24adadbb3b15cac97b747e5c6ace2c59d457d805f38a4d91d5a03",
+      "rows": 3708,
+      "tracks": 106,
+      "frame_min": 0.0,
+      "frame_max": 6020.0
+    },
+    {
+      "path": "datasets/zara1/train/students003_train.txt",
+      "sha256": "85fe6324e9a0b94acb21617eb0331f543fe5ebf0caee1e253794bca554f35daf",
+      "rows": 15641,
+      "tracks": 364,
+      "frame_min": 0.0,
+      "frame_max": 4310.0
+    },
+    {
+      "path": "datasets/zara1/train/biwi_eth_train.txt",
+      "sha256": "7905d1337f8466c3ebcd80e8264158209370e939774a371d215491256128407e",
+      "rows": 3666,
+      "tracks": 250,
+      "frame_min": 780.0,
+      "frame_max": 10230.0
+    },
+    {
+      "path": "datasets/zara1/val/students001_val.txt",
+      "sha256": "dc8f3147820e80642903041b017292eb03ea5df81ffd2974b47a725d8ffeb394",
+      "rows": 3460,
+      "tracks": 96,
+      "frame_min": 3550.0,
+      "frame_max": 4430.0
+    },
+    {
+      "path": "datasets/zara1/val/students003_val.txt",
+      "sha256": "b7aa6dcedba0e9036272dc363e2a25e6bb80d7485d75dcb3fff918ce01b10e24",
+      "rows": 2312,
+      "tracks": 92,
+      "frame_min": 4320.0,
+      "frame_max": 5400.0
+    },
+    {
+      "path": "datasets/zara1/val/uni_examples_val.txt",
+      "sha256": "436dfa865ffab37957e928e227a1b6cc836ab0e6b7652abbf5d06cdf5638dee4",
+      "rows": 481,
+      "tracks": 24,
+      "frame_min": 5940.0,
+      "frame_max": 7410.0
+    },
+    {
+      "path": "datasets/zara1/val/crowds_zara03_val.txt",
+      "sha256": "60d464e21fd3851fab146ec3b35d0db4155b3c057f4b46050336eac59314f0f5",
+      "rows": 1297,
+      "tracks": 33,
+      "frame_min": 6030.0,
+      "frame_max": 7530.0
+    },
+    {
+      "path": "datasets/zara1/val/crowds_zara02_val.txt",
+      "sha256": "361949e5655814680e1185bdd23344932f7b6ccc0d7120c34b523495d0fc69f8",
+      "rows": 2101,
+      "tracks": 47,
+      "frame_min": 8420.0,
+      "frame_max": 10520.0
+    },
+    {
+      "path": "datasets/zara1/val/biwi_eth_val.txt",
+      "sha256": "ed19f8ee52e024788658d70060c1452b991aa506b78ea649c74f79e075ad20b9",
+      "rows": 1826,
+      "tracks": 120,
+      "frame_min": 10240.0,
+      "frame_max": 12380.0
+    },
+    {
+      "path": "datasets/zara1/val/biwi_hotel_val.txt",
+      "sha256": "5c6026c5c6feb81295187e2e063d86197344428811ac2ae98a45bdfb5dfa79ed",
+      "rows": 1597,
+      "tracks": 81,
+      "frame_min": 14400.0,
+      "frame_max": 18060.0
+    },
+    {
+      "path": "datasets/zara1/test/crowds_zara01.txt",
+      "sha256": "1147a1962a09abfb86f28c6cddcac862e095a0cf129b3016385b69eacdd09d85",
+      "rows": 5153,
+      "tracks": 148,
+      "frame_min": 0.0,
+      "frame_max": 9010.0
+    }
+  ]
+}

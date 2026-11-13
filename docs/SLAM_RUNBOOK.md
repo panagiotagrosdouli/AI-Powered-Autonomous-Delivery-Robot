@@ -1,3 +1,5 @@
+> Historical upstream TurtleBot alternative. For the custom robot that actually executed in this session, follow [REPRODUCE.md](REPRODUCE.md). This upstream wrapper itself remains unexecuted.
+
 # Real SLAM computation in Gazebo — reproducible runbook
 
 This procedure uses **live simulated LiDAR and wheel odometry**, processed by the actual `slam_toolbox` package to generate a **new occupancy grid** and `map -> odom` transform. It is genuine algorithmic SLAM on simulated sensor observations, **not physical-world SLAM**. Physical-world SLAM requires a sensor-equipped robot.

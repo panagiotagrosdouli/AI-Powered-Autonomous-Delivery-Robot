@@ -1,0 +1,14 @@
+{
+  "kind": "lstm",
+  "obs": 8,
+  "pred": 12,
+  "data_kind": "SYNTHETIC SOFTWARE TEST ONLY",
+  "sample_interval_seconds": 0.4,
+  "path": "lstm.onnx",
+  "sha256": "2e45bbe1875b7c16d2eb028c8e4bf21ff8d583dc2ff8c304853679c6a7851a3e",
+  "trained_checkpoint_sha256": "a115bcc0020f2fc79d1fd0e91712d3dccd208b222ed9ec4bce4f642f03703a70",
+  "export_max_abs_error_m": 1.1920928955078125e-07,
+  "engineering_only": true,
+  "export_torch": "2.5.1+cpu",
+  "export_onnxruntime": "1.20.1"
+}

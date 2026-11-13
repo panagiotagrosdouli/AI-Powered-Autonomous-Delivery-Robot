@@ -1,0 +1,21 @@
+test_collision (test_algorithms.AlgorithmTests.test_collision) ... ok
+test_expiration (test_algorithms.AlgorithmTests.test_expiration) ... ok
+test_forecast (test_algorithms.AlgorithmTests.test_forecast) ... ok
+test_scan_close (test_algorithms.AlgorithmTests.test_scan_close) ... ok
+test_scan_missing (test_algorithms.AlgorithmTests.test_scan_missing) ... ok
+test_speed_reduction (test_algorithms.AlgorithmTests.test_speed_reduction) ... ok
+test_rear_obstacle_is_not_discarded (test_clearance.FullScanTests.test_rear_obstacle_is_not_discarded) ... ok
+test_speed_limits_fail_closed (test_clearance.FullScanTests.test_speed_limits_fail_closed) ... ok
+test_full_scan_supports_reverse_and_rotation_with_limits (test_invalid.InvalidInputTests.test_full_scan_supports_reverse_and_rotation_with_limits) ... ok
+test_invalid_detection_rejected (test_invalid.InvalidInputTests.test_invalid_detection_rejected) ... ok
+test_nan_and_infinity_stop (test_invalid.InvalidInputTests.test_nan_and_infinity_stop) ... ok
+test_reordered_observation_rejected (test_invalid.InvalidInputTests.test_reordered_observation_rejected) ... ok
+test_metric_optical_projection (test_perception.GeometryTests.test_metric_optical_projection) ... ok
+test_optical_to_robot_rotation (test_perception.GeometryTests.test_optical_to_robot_rotation) ... ok
+test_reject_bad_quaternion (test_perception.GeometryTests.test_reject_bad_quaternion) ... ok
+test_reject_missing_depth (test_perception.GeometryTests.test_reject_missing_depth) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.001s
+
+OK

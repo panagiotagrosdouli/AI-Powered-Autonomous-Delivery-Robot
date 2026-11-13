@@ -1,0 +1,17 @@
+[WARN] [1794516224.434040731] [rgbd_pedestrian_perception]: Rectified zero-distortion images required
+{
+  "kind": "SYNTHETIC ROS integration; injected bounding box; no detector accuracy evidence",
+  "passed": true,
+  "observation_time_tf_x_m": 3.0,
+  "persistent_id": 1,
+  "counts": {
+    "synchronized": 3,
+    "published": 1,
+    "boxes": 1,
+    "metric_observations": 1,
+    "tf_waits": 22,
+    "stale_rejected": 1,
+    "invalid_frame": 1,
+    "reordered_rejected": 1
+  }
+}

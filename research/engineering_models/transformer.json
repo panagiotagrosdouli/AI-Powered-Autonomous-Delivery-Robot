@@ -1,0 +1,14 @@
+{
+  "kind": "transformer",
+  "obs": 8,
+  "pred": 12,
+  "data_kind": "SYNTHETIC SOFTWARE TEST ONLY",
+  "sample_interval_seconds": 0.4,
+  "path": "transformer.onnx",
+  "sha256": "dca2f5b64b485391a7a5f3505e421a19a15611ab1f3c3f7d20a715466ca703b6",
+  "trained_checkpoint_sha256": "5886c61457bae146b458c5355b05a49b71a3b85be331da88b19b1e8d2997e0d7",
+  "export_max_abs_error_m": 8.940696716308594e-07,
+  "engineering_only": true,
+  "export_torch": "2.5.1+cpu",
+  "export_onnxruntime": "1.20.1"
+}

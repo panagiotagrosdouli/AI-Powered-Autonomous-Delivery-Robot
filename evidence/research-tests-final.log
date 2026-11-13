@@ -1,0 +1,14 @@
+test_synthetic_checkpoint_refused_and_history_required (test_neural.NeuralAdapterTests.test_synthetic_checkpoint_refused_and_history_required) ... ok
+test_cv_exact_and_metric (test_research.ResearchTests.test_cv_exact_and_metric) ... ok
+test_models_backward_and_translation (test_research.ResearchTests.test_models_backward_and_translation) ... ok
+test_split_leakage_and_checksum_rejected (test_research.ResearchTests.test_split_leakage_and_checksum_rejected) ... ok
+test_unverified_license_rejected (test_research.ResearchTests.test_unverified_license_rejected) ... ok
+test_duplicate_trial_rejected (test_trials.TrialTests.test_duplicate_trial_rejected) ... ok
+test_failures_retained (test_trials.TrialTests.test_failures_retained) ... ok
+test_missing_condition_rejected (test_trials.TrialTests.test_missing_condition_rejected) ... ok
+test_missing_measurement_rejected (test_trials.TrialTests.test_missing_measurement_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.108s
+
+OK

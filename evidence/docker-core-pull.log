@@ -1,0 +1,31 @@
+jazzy-ros-core: Pulling from library/ros
+26538842dfbf: Pulling fs layer
+b106302b0914: Pulling fs layer
+e88ba20c0189: Pulling fs layer
+b18eec4897f4: Pulling fs layer
+a8131fdf7a31: Pulling fs layer
+fb2cb7fbb492: Pulling fs layer
+b18eec4897f4: Waiting
+a8131fdf7a31: Waiting
+fb2cb7fbb492: Waiting
+b106302b0914: Verifying Checksum
+b106302b0914: Download complete
+e88ba20c0189: Verifying Checksum
+e88ba20c0189: Download complete
+b18eec4897f4: Verifying Checksum
+b18eec4897f4: Download complete
+26538842dfbf: Verifying Checksum
+26538842dfbf: Download complete
+fb2cb7fbb492: Verifying Checksum
+fb2cb7fbb492: Download complete
+26538842dfbf: Pull complete
+b106302b0914: Pull complete
+e88ba20c0189: Pull complete
+a8131fdf7a31: Verifying Checksum
+a8131fdf7a31: Download complete
+b18eec4897f4: Pull complete
+a8131fdf7a31: Pull complete
+fb2cb7fbb492: Pull complete
+Digest: sha256:917946da96cc72b2611134a6597f7c61bda5b5da69b150a4696cf8c195a779f4
+Status: Downloaded newer image for ros:jazzy-ros-core
+docker.io/library/ros:jazzy-ros-core

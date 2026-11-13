@@ -1,0 +1,14 @@
+{
+  "kind": "gru",
+  "obs": 8,
+  "pred": 12,
+  "data_kind": "SYNTHETIC SOFTWARE TEST ONLY",
+  "sample_interval_seconds": 0.4,
+  "path": "gru.onnx",
+  "sha256": "dcd0faf8507fb6c3208baf00bd772dc4dcf031f2c703e513e8f0b833ae5d2e7c",
+  "trained_checkpoint_sha256": "f11492628f3578bab2f72cd8964d43ece9ebc426a5accd7e4900569f577ee57e",
+  "export_max_abs_error_m": 2.384185791015625e-07,
+  "engineering_only": true,
+  "export_torch": "2.5.1+cpu",
+  "export_onnxruntime": "1.20.1"
+}

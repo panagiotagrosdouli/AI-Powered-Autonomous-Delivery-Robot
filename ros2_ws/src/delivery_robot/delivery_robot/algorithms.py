@@ -21,6 +21,10 @@ class Tracker:
         self.next_id = 0
 
     def update(self, detections, now):
+        if not isfinite(now) or any(not all(isfinite(v) for v in d) for d in detections):
+            raise ValueError("Nonfinite observations")
+        if any(now <= t.timestamp for t in self.tracks.values()):
+            raise ValueError("Observations must advance in time")
         self.tracks = {i: t for i, t in self.tracks.items()
                        if 0 <= now - t.timestamp <= self.max_age}
         candidates = sorted((hypot(x-t.x, y-t.y), j, i)
@@ -35,8 +39,8 @@ class Tracker:
             t = self.tracks[i]
             dt = now - t.timestamp
             if dt > 1e-4:
-                t.vx = 0.6*(x-t.x)/dt + 0.4*t.vx
-                t.vy = 0.6*(y-t.y)/dt + 0.4*t.vy
+                t.vx = (x-t.x)/dt
+                t.vy = (y-t.y)/dt
             t.x, t.y, t.timestamp = x, y, now
             used_d.add(j)
             used_t.add(i)
@@ -65,7 +69,7 @@ def scan_clearance(ranges, angle_min, angle_increment, range_min, range_max):
     for index, value in enumerate(ranges):
         angle = angle_min + index*angle_increment
         angle = atan2(sin(angle), cos(angle))
-        if abs(angle) <= 0.4 and isfinite(value) and range_min <= value <= range_max:
+        if isfinite(angle) and isfinite(value) and range_min <= value <= range_max:
             valid.append(value)
     return min(valid) if valid else None
 
@@ -86,7 +90,9 @@ def will_conflict(x, y, yaw, v, w, predictions, radius=0.85):
 
 def gate_velocity(v, w, clearance, pose, predictions):
     """Zero command on missing scan / obstacle / forecast collision."""
-    if clearance is None or clearance <= 0.65:
+    values = [v, w, *pose] + [z for row in predictions for z in row]
+    if (not all(isfinite(z) for z in values) or clearance is None
+            or not isfinite(clearance) or clearance <= 0.65 or abs(v) > 0.5 or abs(w) > 1.0):
         return 0., 0.
     if will_conflict(*pose, v, w, predictions):
         return 0., 0.

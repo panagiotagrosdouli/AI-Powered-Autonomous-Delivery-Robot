@@ -1,35 +1,38 @@
-# Gazebo + Nav2 integration
+# Integration contracts
 
-**Important:** This section is an integration recipe, not a verified end-to-end run.
+`delivery_interfaces/PredictedTracks` has an odom-frame forecast-origin header,
+a separate last detector observation time, and per-track IDs, observation times,
+variable duration offsets and metric points. CV provides no calibrated uncertainty.
+No image coordinates are accepted as metric detections.
 
-Recommended configuration: Ubuntu 24.04 + ROS 2 Jazzy + Gazebo Harmonic.
+Predictor validates frame, finite coordinates and monotonically advancing source
+timestamps. Supervisor uses source sensor stamps and observation age rather than
+refreshing freshness on each forecast publication. Commands time out after 0.5 s;
+scan, odometry and detector/forecast data after 0.6 s. Clock resets fail closed and
+require restarting stateful nodes. Scan and odometry subscriptions accept
+best-effort sensor data. Pose quaternions and expected frames are validated.
 
-Nav2 official quickstart: https://ros-navigation.github.io/mkdocs.nav2.org/jazzy/getting_started/quickstart/quickstart/
+Full-scan radial clearance is conservative for the robot's circular bounding
+footprint; current code stops below 0.65 m and scales velocity until 1.25 m.
+It rejects nonfinite inputs and commands above 0.5 m/s or 1 rad/s. A minimum
+finite scan return is required, so an all-infinite scan stops the robot.
+These are research defaults, not measured safe stopping limits. Sampled forecast
+collision checking does not prove continuous-time clearance or account for
+braking dynamics and uncertainty. Tracking is greedy and can switch identities.
 
-After installing ROS 2:
+Nav2 routing in navigation.launch.py:
 
-    sudo apt install ros-jazzy-navigation2 ros-jazzy-nav2-bringup ros-jazzy-nav2-minimal-tb*
-    source /opt/ros/jazzy/setup.bash
+- Controller/recovery output -> /cmd_vel_raw -> velocity smoother.
+- A: smoother -> /cmd_vel -> Gazebo.
+- B/C/D: smoother -> /cmd_vel_nav -> supervisor -> /cmd_vel -> Gazebo.
+- B uses scan gating; C adds CV forecasts; D selects a verified checkpoint.
 
-Run the TurtleBot3 example according to the Nav2 quickstart. Check the actual installed topic names and message types:
+The real ROS transport test passed with synthetic detector messages, including
+prediction-conflict stopping and stale-observation stopping. This is not live
+YOLO evidence. Only A completed a Gazebo navigation trial. B/C/D end-to-end
+navigation and trained-model ROS execution remain unverified.
 
-    ros2 topic list
-    ros2 topic info -v /cmd_vel
-    ros2 topic info -v /scan
-    ros2 topic info -v /odom
-
-The safety gate **subscribes** to /cmd_vel_nav (geometry_msgs/Twist) and **publishes** to /cmd_vel (geometry_msgs/Twist). Remap Nav2's *final* velocity output (e.g. after the velocity smoother) to /cmd_vel_nav. There must be no second active publisher bypassing the supervisor to /cmd_vel. Nav2 may use TwistStamped in some configurations: adapt its output type before connecting.
-
-Start project nodes with:
-
-    ros2 launch delivery_robot demo.launch.py demo_people:=false
-
-Supply /detected_people as a metric PoseArray **in odom**. Raw YOLO bounding boxes cannot be used directly: camera intrinsics, depth, extrinsics, synchronization and TF localization must be developed first. Set use_sim_time consistently for all nodes when running against Gazebo's /clock.
-
-## Limitations
-
-- The prototype carries future positions in a flattened PoseArray; it assumes exactly eight forecast samples per tracked person at 0.25 s spacing. A proper PredictedTrajectoryArray message should preserve track IDs, time offsets and uncertainty.
-- The constant-velocity tracker is basic and can switch identities.
-- The forward laser cone is not a complete robot footprint/swept-path check.
-- A STOP command here is not equivalent to certified emergency braking.
-- Real robot deployment requires independent hardware interlocks and risk assessment.
+The simulation uses /clock consistently. RGB/depth frame IDs are optical-frame
+IDs; metric deprojection and unit-quaternion transforms have unit tests. Camera
+calibration, depth alignment, time synchronization, multi-object tracking from
+real detections and TF lookup at observation time are still needed for live vision.
